@@ -8,13 +8,13 @@ namespace Sylius\RefundPlugin\Entity;
 class CreditMemoChannel
 {
     /** @var string */
-    private $code;
+    protected $code;
 
     /** @var string */
-    private $name;
+    protected $name;
 
     /** @var string */
-    private $color;
+    protected $color;
 
     public function __construct(string $code, string $name, string $color)
     {

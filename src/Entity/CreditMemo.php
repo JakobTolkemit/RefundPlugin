@@ -8,34 +8,34 @@ namespace Sylius\RefundPlugin\Entity;
 class CreditMemo implements CreditMemoInterface
 {
     /** @var string */
-    private $id;
+    protected $id;
 
     /** @var string */
-    private $number;
+    protected $number;
 
     /** @var string */
-    private $orderNumber;
+    protected $orderNumber;
 
     /** @var int */
-    private $total;
+    protected $total;
 
     /** @var string */
-    private $currencyCode;
+    protected $currencyCode;
 
     /** @var string */
-    private $localeCode;
+    protected $localeCode;
 
     /** @var CreditMemoChannel */
-    private $channel;
+    protected $channel;
 
     /** @var array */
-    private $units;
+    protected $units;
 
     /** @var string */
-    private $comment;
+    protected $comment;
 
     /** @var \DateTimeInterface */
-    private $issuedAt;
+    protected $issuedAt;
 
     public function __construct(
         string $id,
